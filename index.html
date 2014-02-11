@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="RudyMQ by Aashish Koirala, A rudimentary Message Queue for Windows">
+		<title>RudyMQ | Aashish Koirala</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>		
+		<script type="text/javascript" src="http://aashishkoirala.github.io/scripts/bootstrap.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+			    <div class="row">
+			        <div class="span4">
+			            <a href="http://aashishkoirala.github.io" style="text-decoration: none">
+			                <h2 class="muted" style="font-weight: normal" title="Aashish Koirala">aashish<b>koirala</b></h2>
+			            </a>
+			        </div>
+			        <div class="span8 pull-right" style="padding-top: 10px">
+			            <div class="pull-right">
+			                <a title="Aashish Koirala on GitHub" href="http://github.com/aashishkoirala"><img alt="Aashish Koirala on GitHub" src="http://aashishkoirala.github.io/images/github.png" width="32" height="32" style="width: 32px; height: 32px"/></a>
+			                <a title="Aashish Koirala on Twitter" href="http://twitter.com/aashishkoirala"><img alt="Aashish Koirala on Twitter" src="http://aashishkoirala.github.io/images/twitter.png" width="32" height="32" style="width: 32px; height: 32px"/></a>
+			                <a title="Aashish Koirala on LinkedIn" href="http://www.linkedin.com/in/aashishkoirala"><img alt="Aashish Koirala on LinkedIn" src="http://aashishkoirala.github.io/images/linkedin.png" width="32" height="32" style="width: 32px; height: 32px"/></a>
+							<a title="Go to My Blog" href="http://aashishkoirala.wordpress.com"><img alt="Go to My Blog" src="https://secure.gravatar.com/avatar/100f2280ecbf23438d15db61ad1e3ba0" width="32" height="32" style="width: 32px; height: 32px"/></a>
+			            </div>
+			        </div>
+			    </div>
+			</header>
+
+		    <section id="main-content">
+		        <div class="well">
+		            <h3>RudyMQ</h3>
+					<h4>A Rudimentary Message Queue for Windows</h4>
+		            <ul>
+		                <li><a href="http://github.com/aashishkoirala/rudymq">Go to GitHub Repository</a></li>
+		                <li><a href="https://www.nuget.org/packages/RudyMQ.Client/">RudyMQ.Client on NuGet</a></li>
+		                <li><a href="https://www.nuget.org/packages/RudyMQ.Service/">RudyMQ.Service on NuGet</a></li>
+		                <li><a href="downloads/RudyMQ.Server.zip">Download Server Installation</a></li>
+		            </ul>
+                    <br/>
+                    RudyMQ is a lightweight message queue for Windows built using .NET and WCF that you may want to consider if you don't need the enterprise grade features of MSMQ and don't want to deal with all of its tantrums and oh-so-friendly error messages. It supports persistent messages and also comes with its own WCF binding.
+		        </div>
+				<div class="row">
+					<div class="tabbable span3">
+						<ul class="nav nav-pills nav-stacked">
+						  <li class="active"><a href="#getting_started_tab" data-toggle="tab">Getting Started</a></li>
+						  <li><a href="#server_installation_tab" data-toggle="tab">Server Installation</a></li>
+						  <li><a href="#self_hosting_tab" data-toggle="tab">Self Hosting</a></li>
+						  <li><a href="#queue_api_tab" data-toggle="tab">Queue API</a></li>
+						  <li><a href="#wcf_binding_tab" data-toggle="tab">WCF Binding</a></li>
+						  <hr/>
+						  <li><a href="#tos_tab" data-toggle="tab">Terms of Use</a></li>
+						  <li><a href="#privacy_tab" data-toggle="tab">Privacy</a></li>
+						</ul>
+					</div>
+					<div class="tab-content span9">
+						<div class="tab-pane active" id="getting_started_tab">
+							<h5>Getting Started</h5>
+							<ul>
+								<li>
+									To install or host the server:
+									<ul>
+										<li>Download, install and configure the server installation (see <i>Server Installation</i>), or:</li>
+										<li>Download the NuGet package <a href="https://www.nuget.org/packages/RudyMQ.Service/">RudyMQ.Service</a> and add to your hosting application (see <i>Self Hosting</i>).</li>
+									</ul>
+								</li><br/>
+								<li>
+									To talk to an existing instance:
+									<ul>
+										<li>Download the NuGet package <a href="https://www.nuget.org/packages/RudyMQ.Client/">RudyMQ.Client</a> and add to your application.</li>
+										<li>Access the queue API directly (see <i>Queue API</i>) or use the WCF binding provided (see <i>WCF Binding</i>)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane" id="server_installation_tab">
+							<h5>Server Installation</h5>
+							<ul>								
+								<li>Make sure .NET 4.5 is installed on your system.</li>
+								<li>Download the server installation <a href="downloads/RudyMQ.Server.zip">here</a>.</li>
+								<li>Extract the files.</li>
+								<li>If you want to, make changes to the <i>AK.RudyMQ.Service.Host.exe.config</i> file as needed. Instructions can be found inside the file itself.</li>
+								<li>Run <i>Install.cmd</i>.</li>
+								<li>A new service for RudyMQ should be registered which you can now start like any other service.</li>
+							</ul>
+						</div>
+						<div class="tab-pane" id="self_hosting_tab">
+							<h5>Self Hosting</h5>
+							<ul>
+							<li>Add the NuGet package <a href="https://www.nuget.org/packages/RudyMQ.Service/">RudyMQ.Service</a> to your hosting application (which may be a web application, a Windows or console application, an Azure worker role - whatever).</li>
+							<li>Use the <code>QueueHost</code> class to instantiate and listen.</li>
+							<li>Example:</li>
+							</ul>
+							<blockquote><pre>
+using (var queueHost = new QueueHost(hostName, port, baseAddress,
+	catalogLocation, persistLocation, transitLocation,
+	transitCleanupInterval, transitMaximumAge))
+{
+    queueHost.Open();
+
+    // ...
+}</pre></blockquote>							
+						</div>
+						<div class="tab-pane" id="queue_api_tab">
+							<h5>Queue API</h5>
+							<ul>
+								<li>Add the NuGet package <a href="https://www.nuget.org/packages/RudyMQ.Client/">RudyMQ.Client</a> to your application.</li>
+								<li>You can send or receive typed messages. Message types can be any simple and serializable data structure. It needs to be marked as <code>Serializable</code>.</li>
+								<li>Sending a message:</li>
+							</ul>
+							<blockquote><pre>
+var conn = MessageQueue.Connect(hostName, port, baseAddress);
+var queue = conn.Get("MyQueue");
+
+var message = new MyMessage { ... };
+queue.Send(message);</pre></blockquote>
+							<ul><li>Receiving a message:</li></ul>
+							<blockquote><pre>
+// Here, receiveOperation is IDisposable. You can call Stop on it, or just Dispose it,
+// use it inside a using block, whatever, when you want to stop receiving.
+
+var receiveOperation = queue.StartReceiving&lt;MyMessage&gt;(100, /* poll every 100 ms */
+    message =>
+    {
+        // Handle received message here.
+
+    }, exception =>
+    {
+        // Handle exception here.
+
+    });</pre></blockquote>
+							<ul><li>Other operations:</li></ul>
+							<blockquote><pre>
+conn.Create("MyQueue", true, false); // Create a new queue.
+conn.Remove("ExistingQueue"); // Remove an existing queue.
+
+queue.Purge&lt;MyMessage&gt;(); // Remove all messages of type MyMessage from the queue.
+queue.PurgeAll(); // Remove all messages from the queue.</pre></blockquote>							
+						</div>
+						<div class="tab-pane" id="wcf_binding_tab">
+							<h5>WCF Binding</h5>
+							<ul>
+								<li>Just as with MSMQ, you can use RudyMQ as a transport mechanism for one-way WCF operations.</li>
+								<li>The binding is part of the <a href="https://www.nuget.org/packages/RudyMQ.Client/">RudyMQ.Client</a> package.</li>
+								<li>The endpoint address is of the form <b>net.rudymq://</b><i>hostname</i><b>:</b><i>port</i><b>/</b><i>baseAddress</i><b>/</b><i>queueName</i></li>
+								<li>Example server side WCF configuration:</li>
+							</ul>
+							<blockquote><pre>
+&lt;system.serviceModel&gt;
+    &lt;extensions&gt;
+        &lt;bindingExtensions&gt;
+            &lt;add name="rudyMqBinding" type="AK.RudyMQ.Client.ServiceModel.RudyMqBindingSection, AK.RudyMQ.Client"/&gt;
+        &lt;/bindingExtensions&gt;
+    &lt;/extensions&gt;
+    &lt;services&gt;
+        &lt;service name="..."&gt;
+            &lt;endpoint address="net.rudymq://..." binding="rudyMqBinding" contract="..." /&gt;
+        &lt;/service&gt;
+    &lt;/services&gt;
+&lt;/system.serviceModel&gt;</pre></blockquote>
+							<ul><li>Example client side WCF configuration:</li></ul>
+							<blockquote><pre>
+&lt;system.serviceModel&gt;
+    &lt;extensions&gt;
+        &lt;bindingExtensions&gt;
+            &lt;add name="rudyMqBinding" type="AK.RudyMQ.Client.ServiceModel.RudyMqBindingSection, AK.RudyMQ.Client"/&gt;
+        &lt;/bindingExtensions&gt;
+    &lt;/extensions&gt;
+    &lt;client&gt;
+        &lt;endpoint address="net.rudymq://..." binding="rudyMqBinding" contract="..." /&gt;
+    &lt;/client&gt;
+&lt;/system.serviceModel&gt;</pre></blockquote>
+							<ul><li>Example server side when done programmatically:</li></ul>
+							<blockquote><pre>
+using (var serviceHost = new ServiceHost(...))
+{
+    serviceHost.AddServiceEndpoint(..., new RudyMqBinding(), "net.rudymq://...");
+    serviceHost.Open();
+    ...
+}</pre></blockquote>
+							<ul><li>Example client side when done programmatically:</li></ul>
+							<blockquote><pre>
+var proxy = new <i>ServiceProxyClass</i>(new RudyMqBinding(), "net.rudymq://...");
+...
+proxy.Close();</pre></blockquote>
+						</div>
+						<div class="tab-pane" id="tos_tab">
+							<h5>Terms of Use</h5>
+							<ul>
+								<li>The server installation as well as the NuGet packages are free to download and use.</li>
+								<li>The source code is provided under the GPL v3 License. You can see it <a href="https://github.com/aashishkoirala/rudymq/blob/develop/LICENSE">here.</a></li>
+								<li>As with most things free, do not blame me if running this blows up your computer or infects you with Hepatitis.</li>
+								<li>If there are legit issues, please do log a GitHub issue.</li>
+							</ul>
+						</div>
+						<div class="tab-pane" id="privacy_tab">
+							<h5>Privacy</h5>
+							<ul>
+								<li>These are downloads and libraries, not hosted solutions.</li>
+								<li>Nowhere does RudyMQ ask you for or store any personal information.</li>
+								<li>The page you're looking at right now has a rudimentary Google Analytics scriptlet.</li>
+								<li>Identifiable information related to usage and download of the server installation is not tracked as far as I know (unless Google Analytics is doing something I am unaware of).</li>
+								<li>Download of the NuGet package is not tracked except the NuGet download counter itself.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		    </section>
+		</div>
+
+		<!-- <script type="text/javascript">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-42900227-1', 'aashishkoirala.github.io');
+		  ga('send', 'pageview');
+		</script> -->
+
+	</body>
+</html>

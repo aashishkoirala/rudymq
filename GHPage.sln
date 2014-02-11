@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GHPage", "GHPage", "{5BF22146-73FB-4731-B735-99224137A532}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		LICENSE = LICENSE
+		params.json = params.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F11A71C0-A652-4D1B-BCDD-20400FEF9E84}"
+	ProjectSection(SolutionItems) = preProject
+		images\glyphicons-halflings-white.png = images\glyphicons-halflings-white.png
+		images\glyphicons-halflings.png = images\glyphicons-halflings.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{6B003283-64F1-491B-958B-1190A7FFA78D}"
+	ProjectSection(SolutionItems) = preProject
+		css\bootstrap.min.css = css\bootstrap.min.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F11A71C0-A652-4D1B-BCDD-20400FEF9E84} = {5BF22146-73FB-4731-B735-99224137A532}
+		{6B003283-64F1-491B-958B-1190A7FFA78D} = {5BF22146-73FB-4731-B735-99224137A532}
+	EndGlobalSection
+EndGlobal
