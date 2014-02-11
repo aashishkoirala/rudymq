@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="PublishPackageLocally" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectPath>$(MSBuildProjectDirectory)\..</ProjectPath>
+    <ProjectFile>$(ProjectPath)\AK.RudyMQ.Client.csproj</ProjectFile>
+	<PackageFileFilter>AK.RudyMQ.*.dll</PackageFileFilter>
+  </PropertyGroup>
+  <Import Project="$(AKEnvironmentRoot)\BuildAndPack.props"/>
+  <Import Project="$(AKEnvironmentRoot)\BuildAndPack.targets"/>  
+</Project>

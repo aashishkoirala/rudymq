@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>RudyMQ.Client</id>
+    <title>RudyMQ Message Queue Client Library</title>
+    <version>0.1.0</version>
+    <authors>Aashish Koirala</authors>
+    <owners>Aashish Koirala</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>rudymq queue aashish koirala</tags>
+    <summary>Client library that lets you send messages to and receive messages from a RudyMQ message queue server.</summary>
+    <description>
+      Client library that lets you send messages to and receive messages from a RudyMQ message queue server. Also includes a WCF binding that lets you use RudyMQ as the transport.
+      For more detailed information and documentation, please visit the GitHub page at http://aashishkoirala.github.io/rudymq. You can find more of my stuff by visiting my page at http://aashishkoirala.github.io.
+      The package is free to download and use. The source code is open and provided under the GPL license.
+    </description>
+    <copyright>Copyright © 2014 Aashish Koirala</copyright>
+    <projectUrl>http://aashishkoirala.github.io/rudymq/</projectUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+  </metadata>
+</package>

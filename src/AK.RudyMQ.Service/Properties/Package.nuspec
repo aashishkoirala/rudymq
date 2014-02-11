@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>RudyMQ.Service</id>
+    <title>RudyMQ Message Queue Service Library</title>
+    <version>0.1.0</version>
+    <authors>Aashish Koirala</authors>
+    <owners>Aashish Koirala</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>rudymq queue aashish koirala</tags>
+    <summary>Lets you host your own instance of RudyMQ message queue server.</summary>
+    <description>
+      Lets you host your own instance of RudyMQ message queue server. Add this to a host application and call the initialization routine to get it running.
+      For more detailed information and documentation, please visit the GitHub page at http://aashishkoirala.github.io/rudymq. You can find more of my stuff by visiting my page at http://aashishkoirala.github.io.
+      The package is free to download and use. The source code is open and provided under the GPL license.
+    </description>
+    <copyright>Copyright © 2014 Aashish Koirala</copyright>
+    <projectUrl>http://aashishkoirala.github.io/rudymq/</projectUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+  </metadata>
+</package>
